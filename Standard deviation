@@ -1,0 +1,21 @@
+#
+# 표준편차
+#
+
+import numpy as np
+import math
+
+ds = [70, 80, 50, 90, 95, 100, 85]
+
+sum = 0
+for x in ds:
+  sum = sum + x
+mean = sum / len(ds)
+
+sum = 0
+for x in ds:
+  sum = sum + (x-mean)**2
+stdev = math.sqrt(sum/len(ds))
+print('표준편차:', stdev)
+
+print('표준편차:', np.std(ds)) # 함수
