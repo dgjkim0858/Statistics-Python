@@ -1,0 +1,15 @@
+#
+# 평균
+#
+
+import numpy as np
+
+ds = [70, 80, 50, 90, 95, 100, 85]
+
+sum = 0
+for x in ds:
+  sum = sum + x
+mean = sum / len(ds)
+print('평균:', mean)
+
+print('평균:', np.mean(ds)) # 함수
